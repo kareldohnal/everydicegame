@@ -1,6 +1,7 @@
-30-03-2021
+2021-03-30
 Trying the best way how to combine React FE with Node Express BE, let's go with https://www.freecodecamp.org/news/create-a-react-frontend-a-node-express-backend-and-connect-them-together-c5798926047c/
 ^^ that was disproved as outdated tutorial
 Continuing with official Socket.io tutorial https://socket.io/docs/v3/server-installation/
 ^^ unfortunately socket.io documentation is not very well written.
 Next try using https://medium.com/swlh/socket-io-games-the-right-way-using-nodejs-and-react-not-a-chat-app-part-1-e7a49d2f3f51
+End of the session: Node server is running without errors. Issues to solve - using literal references with file type; API_PORT in app.js on server side is hardcoded, should be defined by .env
