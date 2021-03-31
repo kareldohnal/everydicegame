@@ -1,10 +1,8 @@
 import { engine } from './engine/index.js';
 import express from 'express';
 import http from 'http';
-import { hosts } from './env.js';
+import { API_PORT, hosts } from './env.js';
 import consola from 'consola';
-
-const API_PORT = 3000;
 
 const app = express();
 const server = new http.Server(app);

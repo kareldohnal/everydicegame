@@ -1,3 +1,8 @@
+2021-03-31
+Starting day solving the issue with env variable API_PORT
+^^ Problem solved with npm package 'dotenv'
+
+
 2021-03-30
 Trying the best way how to combine React FE with Node Express BE, let's go with https://www.freecodecamp.org/news/create-a-react-frontend-a-node-express-backend-and-connect-them-together-c5798926047c/
 ^^ that was disproved as outdated tutorial

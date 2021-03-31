@@ -1,3 +1,7 @@
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 export const {
     API_PORT,
     DB_URL_PROD
