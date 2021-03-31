@@ -15,6 +15,6 @@ if (process.env.NODE_ENV === 'production') {
     hosts = ['https://dice.jesenzacni.cz'];
     DB_URL = DB_URL_PROD;
 } else {
-    hosts = ['http://localhost:3000'];
+    hosts = ['http://localhost:9000'];
     DB_URL = DB_URL_DEV;
 }

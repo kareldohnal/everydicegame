@@ -8,6 +8,8 @@ Continuing basic structure development with use of https://medium.com/swlh/socke
 Understanding Namespaces and Rooms, implementing roomManager
 ^^roomManager as described in the tutorial won't be necessary
 Proceeding with implementing basic FE
+Basic React FE implemented
+End of the session: Basic FE and BE seem to run ok. Pending issues - FE io ENDPOINT is hardcoded - transfer to .env and distinguish between production and dev
 
 
 2021-03-30

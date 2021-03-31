@@ -1,7 +1,7 @@
 import { engine } from './engine/index.js';
 import express from 'express';
 import http from 'http';
-import { API_PORT, hosts } from './env';
+import { API_PORT, hosts } from './env.js';
 import consola from 'consola';
 
 const app = express();
