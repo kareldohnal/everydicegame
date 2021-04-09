@@ -1,6 +1,8 @@
 2021-04-09
 Starting with pending problem from last session.
-^^solved. At this point the differentiation for prod/dev is not solved, but that can be skipped for now as I don§t have deployed prod env
+^^solved. At this point the differentiation for prod/dev is not solved, but that can be skipped for now as I don't have deployed prod env
+Next up we will try to create separate rooms in Socket.io
+End of the session: Implementing FE form for basic room creation. Continue with that.
 
 
 2021-03-31
