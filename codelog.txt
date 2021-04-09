@@ -1,3 +1,8 @@
+2021-04-09
+Starting with pending problem from last session.
+^^solved. At this point the differentiation for prod/dev is not solved, but that can be skipped for now as I don§t have deployed prod env
+
+
 2021-03-31
 Starting day solving the issue with env variable API_PORT
 ^^ Problem solved with npm package 'dotenv'
