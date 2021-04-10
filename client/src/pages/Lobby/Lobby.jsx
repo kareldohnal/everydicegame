@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
-import { socket } from '../../utils/socket';
+import { useState } from 'react';
+// import { socket } from '../../utils/socket';
 
-// import './Lobby.css';
+// import './Lobby.scss';
 
 export const Lobby = () => {
     const [game, setGame] = useState('dice');
+    const [roomID, setRoomID] = useState('pica');
 
     // useEffect(() => {
     //     socket.on("connect", () => {
@@ -16,9 +17,12 @@ export const Lobby = () => {
     const handleChange = (e) => {
         setGame(e.target.value)
     }
+    const handleChangeRoom = (e) => {
+        setRoomID(e.target.value)
+    }
 
     const handleSubmit = (e) => {
-        alert('Your favorite flavor is: ' + game);
+        alert('Your favorite flavor is: ' + game + roomID);
         e.preventDefault();
     }
 
@@ -34,6 +38,7 @@ export const Lobby = () => {
                             <option value="dice2">Dice2</option>
                             <option value="dice3">Dice3</option>
                         </select>
+                        <input type="text" id="roomID" name="roomID" value={roomID} onChange={handleChangeRoom} />
                     </label>
                     <input type="submit" value="Submit" />
                 </form>

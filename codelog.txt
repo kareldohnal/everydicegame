@@ -1,3 +1,10 @@
+2021-04-10
+Continuing with building testing form for namespace and room creation.
+Form done, now implementing proper response from server.
+I drop the idea of separate namespaces for separate games. It is unnecessary complication as the game type can be passed as room variable. Focusing on rooms only.
+End of the session: Pending problem - Socket connecting twice on server and.
+
+
 2021-04-09
 Starting with pending problem from last session.
 ^^solved. At this point the differentiation for prod/dev is not solved, but that can be skipped for now as I don't have deployed prod env
