@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Nav } from '../../components/Nav/Nav';
 // import { socket } from '../../utils/socket';
 
 // import './Lobby.scss';
@@ -29,6 +30,7 @@ export const Lobby = () => {
     return (
         <>
             <div className="lobby">
+                <Nav />
                 Create game :
                 <form onSubmit={handleSubmit}>
                     <label>
