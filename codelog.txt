@@ -2,7 +2,10 @@
 Starting with pending problem of multiple connection queries on server side.
 ^^ Solved. The problem was that socket variable was defined outside useEffect and was executed twice, during initial load and during rendering.
 Next I've checked basic user and room handeling. Works fine.
-Next, let's create the most minimal UI and build from that point. Starting with basic Lobby, Navbar and siingle button for generating new room.
+Next, let's create the most minimal UI and build from that point. Starting with basic Lobby, Navbar and single button for generating new room.
+Navbar mockup done.
+Now going for two tabs for Game and for Dice generator.
+End of the session: Tabs prepared. Next session continue with tabs rendering.
 
 2021-04-10
 Continuing with building testing form for namespace and room creation.

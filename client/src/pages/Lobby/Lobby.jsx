@@ -1,19 +1,11 @@
 import { useState } from 'react';
 import { Nav } from '../../components/Nav/Nav';
-// import { socket } from '../../utils/socket';
 
 // import './Lobby.scss';
 
 export const Lobby = () => {
     const [game, setGame] = useState('dice');
     const [roomID, setRoomID] = useState('pica');
-
-    // useEffect(() => {
-    //     socket.on("connect", () => {
-    //         // ERASE LOG
-    //         console.log(socket.id)
-    //     });
-    // });
 
     const handleChange = (e) => {
         setGame(e.target.value)
@@ -27,10 +19,20 @@ export const Lobby = () => {
         e.preventDefault();
     }
 
+    const [tab, setTab] = useState('game-tab');
+
+    const handleTab = (e) => {
+        setTab(e.target.id)
+    }
+
     return (
         <>
             <div className="lobby">
                 <Nav />
+                <div className="tabs">
+                    <button id='game-tab' className={'game-tab' === tab ? 'tab-item active' : 'tab-item'}onClick={handleTab}>London</button>
+                    <button id='sim-tab' className={'sim-tab' === tab ? 'tab-item active' : 'tab-item'} onClick={handleTab}>Paris</button>
+                </div>
                 Create game :
                 <form onSubmit={handleSubmit}>
                     <label>
