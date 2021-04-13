@@ -15,8 +15,8 @@ export default app => {
     // consola.info(socket)
     consola.info(socket.id);
     consola.info(socket.handshake.query.roomID)
-    // socket.join(socket.handshake.query.roomID)
-    // socket.to(socket.handshake.query.roomID).emit('log', 'User ' + socket.id + ' joined this room.')
+    socket.join(socket.handshake.query.roomID)
+    socket.to(socket.handshake.query.roomID).emit('log', 'User ' + socket.id + ' joined this room.')
   });
 
   return io;

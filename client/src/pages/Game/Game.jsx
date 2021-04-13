@@ -4,35 +4,27 @@ import { GameSocket } from '../../utils/socket';
 
 // import './Game.scss';
 
-export const Game =  () => {
+export const Game = () => {
     let { roomID } = useParams();
-    let socket = GameSocket(roomID)
+
 
     useEffect(() => {
+        let socket = GameSocket(roomID)
+
         socket.on("connect", () => {
-            // ERASE LOG
-            console.log(socket.id)
-            console.log(roomID)
-        });
-        // socket.on("log", (msg) => {
-        //     console.log(msg);
-        // })
-    }, []);
+                // ERASE LOG
+                console.log(socket.id)
+                console.log(roomID)
+            })
+        socket.on("log", (msg) => {
+                console.log(msg);
+            })
 
-    // useEffect(() => {
-    //     socket.on("connect", () => {
-    //         // ERASE LOG
-    //         console.log(socket.id)
-    //         console.log(roomID)
-    //     });
-    //     socket.on("log", (msg) => {
-    //         console.log(msg);
-    //     })
-    // })
+    }, [roomID]);
 
-    return (
-        <>
-            <div>{roomID}</div>
-        </>
-    );
+return (
+    <>
+        <div>{roomID}</div>
+    </>
+);
 };
