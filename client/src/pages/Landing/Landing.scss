@@ -1,3 +1,31 @@
+@use "../../scss/colors";
+
 .landing {
     min-height: 100vh;
+}
+
+.tabs {
+    display: flex;
+    .tab-item {
+        width: 50%;
+        border: 0;
+        font-weight: bold;
+        font-size: 1.3rem;
+        &:focus{
+            outline: thin;
+        }
+        &:hover{
+            background-color: lightgrey;
+        }
+        &.active {
+            background-color: colors.$blueish;
+            color: white;
+        }
+    }
+}
+
+
+
+.tab-canvas {
+    background-color: colors.$blueish;
 }

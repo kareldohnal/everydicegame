@@ -3,7 +3,9 @@ Continuing developing tabs for landing page.
 ^^ Tabs mockup completed.
 Changing Lobby to Landing to make Lobby separate component.
 Footer mockup created
-Implementing basic styling for tabs.
+Implementing basic styling for tabs + SCSS partials.
+^^Done.
+
 
 
 2021-04-13
@@ -14,6 +16,7 @@ Next, let's create the most minimal UI and build from that point. Starting with 
 Navbar mockup done.
 Now going for two tabs for Game and for Dice generator.
 End of the session: Tabs prepared. Next session continue with tabs rendering.
+
 
 2021-04-10
 Continuing with building testing form for namespace and room creation.

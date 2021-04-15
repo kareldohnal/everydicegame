@@ -21,11 +21,11 @@ export const Landing = () => {
                 </div>
 
                 {tab === 'game-tab' && (
-                    <div>hra</div>
+                    <div className='tab-canvas'>hra</div>
                 )}
 
                 {tab === 'sim-tab' && (
-                    <div>simulátor</div>
+                    <div className='tab-canvas'>simulátor</div>
                 )}
             </div>
             <Footer />
