@@ -1,3 +1,10 @@
+2021-04-15
+Continuing developing tabs for landing page.
+^^ Tabs mockup completed.
+Changing Lobby to Landing to make Lobby separate component.
+
+
+
 2021-04-13
 Starting with pending problem of multiple connection queries on server side.
 ^^ Solved. The problem was that socket variable was defined outside useEffect and was executed twice, during initial load and during rendering.
