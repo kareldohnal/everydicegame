@@ -2,7 +2,8 @@
 Continuing developing tabs for landing page.
 ^^ Tabs mockup completed.
 Changing Lobby to Landing to make Lobby separate component.
-
+Footer mockup created
+Implementing basic styling for tabs.
 
 
 2021-04-13

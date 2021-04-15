@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import { Footer } from '../../components/Footer/Footer';
 import { Nav } from '../../components/Nav/Nav';
 
-// import './Lobby.scss';
+import './Landing.scss';
 
-export const Lobby = () => {
+export const Landing = () => {
     const [tab, setTab] = useState('game-tab');
 
     const handleTab = (e) => {
@@ -12,7 +13,7 @@ export const Lobby = () => {
 
     return (
         <>
-            <div className="lobby">
+            <div className="landing">
                 <Nav />
                 <div className="tabs">
                     <button id='game-tab' className={'game-tab' === tab ? 'tab-item active' : 'tab-item'} onClick={handleTab}>Game rooms</button>
@@ -26,8 +27,8 @@ export const Lobby = () => {
                 {tab === 'sim-tab' && (
                     <div>simulátor</div>
                 )}
-
             </div>
+            <Footer />
         </>
     );
 };

@@ -7,7 +7,7 @@ import {
 
 import './App.css';
 import { Game } from "./pages/Game/Game";
-import { Lobby } from './pages/Lobby/Lobby';
+import { Landing } from './pages/Landing/Landing';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/game/:roomID" component={Game} />
-          <Route path="/" component={Lobby} />
+          <Route path="/" component={Landing} />
         </Switch>
       </Router>
     </>
