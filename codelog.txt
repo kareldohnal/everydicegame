@@ -5,7 +5,9 @@ Changing Lobby to Landing to make Lobby separate component.
 Footer mockup created
 Implementing basic styling for tabs + SCSS partials.
 ^^Done.
-
+Creating Simulator - testing randomness first.
+Testing succesfull - let's go with Chance library.
+End of the session: For adding dice use MUI - Chip component
 
 
 2021-04-13

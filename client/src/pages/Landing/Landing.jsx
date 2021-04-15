@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Footer } from '../../components/Footer/Footer';
 import { Nav } from '../../components/Nav/Nav';
+import { Simulator } from '../../components/Simulator/Simulator';
 
 import './Landing.scss';
 
@@ -25,7 +26,7 @@ export const Landing = () => {
                 )}
 
                 {tab === 'sim-tab' && (
-                    <div className='tab-canvas'>simulátor</div>
+                    <div className='tab-canvas'><Simulator /></div>
                 )}
             </div>
             <Footer />

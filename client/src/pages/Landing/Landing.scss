@@ -1,7 +1,7 @@
 @use "../../scss/colors";
 
 .landing {
-    min-height: 100vh;
+    height: calc(100vh - 3rem);
 }
 
 .tabs {
@@ -28,4 +28,5 @@
 
 .tab-canvas {
     background-color: colors.$blueish;
+    height: calc(100% - 3rem);
 }
