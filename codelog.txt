@@ -1,3 +1,9 @@
+2021-04-21
+Starting with Cloth component and MUI Chips.
+Implemented Dialog for adding dices.
+End of the session: Next continue with new Chips popping after adding dices.
+
+
 2021-04-15
 Continuing developing tabs for landing page.
 ^^ Tabs mockup completed.
@@ -7,7 +13,7 @@ Implementing basic styling for tabs + SCSS partials.
 ^^Done.
 Creating Simulator - testing randomness first.
 Testing succesfull - let's go with Chance library.
-End of the session: For adding dice use MUI - Chip component
+End of the session: For adding dice use MUI - Chip component.
 
 
 2021-04-13
