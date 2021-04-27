@@ -57,7 +57,7 @@ function AddDiceDialog(props) {
           Number after 'D' represent number of dice faces
         </FormHelperText>
         <Button variant="contained" color="primary" onClick={handleClose}>
-          Primary
+          Add
         </Button>
       </FormControl>
     </Dialog>
@@ -92,6 +92,10 @@ export const Cloth = () => {
   const [dices, setDices] = useState([]);
   const [dialogOpen, setDialogOpen] = useState(false);
 
+  const handleDel = (item) => {
+    // setDices((dices) => dices.filter((dice) => dice !== item))
+  };
+
   const handleAdd = () => {
     setDialogOpen(true);
   };
@@ -102,8 +106,23 @@ export const Cloth = () => {
   };
 
   const pushDice = (value) => {
-    dices.push(value)
+    console.log(dices)
+    console.log(value)
+    setDices(dices.concat(value))
+    console.log(dices.concat(value))
   };
+
+  const Chips = dices.map((item, index) => (
+    <Chip
+  key={item + index}
+  id={index}
+  size="small"
+  onDelete={handleDel(item)}
+  icon={<CasinoIcon />}
+  className='dice-chip'
+  label={item}
+/>
+))
 
   return (
     <>
@@ -113,12 +132,13 @@ export const Cloth = () => {
         <div className="roller">
           <div className="dices">
             Dices
+            {dices.length > 0 ? Chips : ""}
             <Chip
               size="small"
               deleteIcon={<AddIcon />}
               onClick={handleAdd}
               onDelete={handleAdd}
-              icon={<CasinoIcon />}
+              className='dice-chip'
               label="Add dice"
             />
             <AddDiceDialog open={dialogOpen} onClose={handleClose} />

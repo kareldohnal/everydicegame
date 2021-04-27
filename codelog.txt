@@ -1,3 +1,8 @@
+2021-04-27
+Starting session - continuing with implementing Chips on Cloth.
+End of the session: Ongoin problem with handleDel function in Cloth (line 96) deletes Chip before even creating. Possible bug due to Cloth being const https://dev.to/ugglr/react-functional-components-const-vs-function-2kj9
+
+
 2021-04-21
 Starting with Cloth component and MUI Chips.
 Implemented Dialog for adding dices.
