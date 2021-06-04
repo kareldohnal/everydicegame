@@ -1,3 +1,9 @@
+2021-06-04
+Trying to solve the Chip issue with onDelete function.
+The issue was somewhere else. onDelete didn't trigger rerender. Fixed.
+
+
+
 2021-04-27
 Starting session - continuing with implementing Chips on Cloth.
 End of the session: Ongoin problem with handleDel function in Cloth (line 96) deletes Chip before even creating. Possible bug due to Cloth being const https://dev.to/ugglr/react-functional-components-const-vs-function-2kj9

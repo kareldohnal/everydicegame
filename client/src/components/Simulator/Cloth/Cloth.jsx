@@ -61,30 +61,6 @@ function AddDiceDialog(props) {
         </Button>
       </FormControl>
     </Dialog>
-    // <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
-    //   <DialogTitle id="simple-dialog-title">Set backup account</DialogTitle>
-    //   <List>
-    //     {emails.map((email) => (
-    //       <ListItem button onClick={() => handleListItemClick(email)} key={email}>
-    //         <ListItemAvatar>
-    //           <Avatar className={classes.avatar}>
-    //             <PersonIcon />
-    //           </Avatar>
-    //         </ListItemAvatar>
-    //         <ListItemText primary={email} />
-    //       </ListItem>
-    //     ))}
-
-    //     <ListItem autoFocus button onClick={() => handleListItemClick('addAccount')}>
-    //       <ListItemAvatar>
-    //         <Avatar>
-    //           <AddIcon />
-    //         </Avatar>
-    //       </ListItemAvatar>
-    //       <ListItemText primary="Add account" />
-    //     </ListItem>
-    //   </List>
-    // </Dialog>
   );
 }
 
@@ -92,8 +68,10 @@ export const Cloth = () => {
   const [dices, setDices] = useState([]);
   const [dialogOpen, setDialogOpen] = useState(false);
 
-  const handleDel = (item) => {
-    // setDices((dices) => dices.filter((dice) => dice !== item))
+  const handleDel = (item) => () => {
+    var d = dices;
+    d.splice(item, 1);
+    setDices([...d]);
   };
 
   const handleAdd = () => {
@@ -106,23 +84,8 @@ export const Cloth = () => {
   };
 
   const pushDice = (value) => {
-    console.log(dices)
-    console.log(value)
-    setDices(dices.concat(value))
-    console.log(dices.concat(value))
+    setDices(dices.concat(value));
   };
-
-  const Chips = dices.map((item, index) => (
-    <Chip
-  key={item + index}
-  id={index}
-  size="small"
-  onDelete={handleDel(item)}
-  icon={<CasinoIcon />}
-  className='dice-chip'
-  label={item}
-/>
-))
 
   return (
     <>
@@ -132,13 +95,26 @@ export const Cloth = () => {
         <div className="roller">
           <div className="dices">
             Dices
-            {dices.length > 0 ? Chips : ""}
+            {console.log("ahoj")}
+            {
+            dices.map((item, index) => (
+              <Chip
+                key={item + index}
+                id={index}
+                size="small"
+                onDelete={handleDel(index)}
+                icon={<CasinoIcon />}
+                className="dice-chip"
+                label={item}
+              />
+            ))
+            }
             <Chip
               size="small"
               deleteIcon={<AddIcon />}
               onClick={handleAdd}
               onDelete={handleAdd}
-              className='dice-chip'
+              className="dice-chip"
               label="Add dice"
             />
             <AddDiceDialog open={dialogOpen} onClose={handleClose} />
