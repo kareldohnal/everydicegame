@@ -95,7 +95,6 @@ export const Cloth = () => {
         <div className="roller">
           <div className="dices">
             Dices
-            {console.log("ahoj")}
             {
             dices.map((item, index) => (
               <Chip
