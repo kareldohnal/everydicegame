@@ -12,6 +12,7 @@ import InputLabel from "@material-ui/core/InputLabel";
 import { makeStyles } from "@material-ui/core/styles";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
+import Chance from "chance"
 
 import "./Cloth.scss";
 
@@ -87,6 +88,13 @@ export const Cloth = () => {
     setDices(dices.concat(value));
   };
 
+  const handleRoll = () => {
+    const chance = new Chance()
+    dices.map((item) => {
+      console.log(chance.natural({ min: 1, max: parseInt(item, 10) }))
+    })
+  }
+
   return (
     <>
       <div className="cloth">
@@ -118,7 +126,7 @@ export const Cloth = () => {
             />
             <AddDiceDialog open={dialogOpen} onClose={handleClose} />
           </div>
-          <button>Roll</button>
+          <button onClick={handleRoll}>Roll</button>
         </div>
       </div>
     </>
